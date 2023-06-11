@@ -1,7 +1,87 @@
 .post {
-
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0 0 0 / .03) ;
 }
 
 .post .post-container {
+    padding: 20px;
+}
+
+.post .post-container .post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .post-container .post-top .post-topleft {
+    display: flex;
+    align-items: center;
+}
+
+.post .post-container .post-top .post-topleft .post-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-right: 10px;
+    background: cadetblue;
+}
+
+.post .post-container .post-top .post-topleft .post-username {
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.post .post-container .post-top .post-topleft .post-date {
+    font-size: 12px;
+}
+
+.post .post-container .post-center {
+    margin: 20px 0;    
+}
+
+.post .post-container .post-center .post-text {
     
+}
+
+.post .post-container .post-center .post-image {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: sandybrown;
+}
+
+.post .post-container .post-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .post-container .post-bottom .post-bottomleft {
+
+}
+
+.post .post-container .post-bottom .post-bottomleft .post-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: tomato;
+    margin-right: 5px;
+}
+
+.post .post-container .post-bottom .post-bottomleft .post-counter {
+    font-size: 15px;
+}
+
+.post .post-container .post-bottom .post-bottomright {
+
+}
+
+.post .post-container .post-bottom .post-bottomright .post-comment-text {
+    cursor: pointer;
+    font-size: 15px;
+    border-bottom: 1px dashed grey;
 }
