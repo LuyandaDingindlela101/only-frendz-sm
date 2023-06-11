@@ -1,0 +1,75 @@
+.share {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0 0 0 / .03) ;
+}
+
+.share .share-container {
+    padding: 20px;
+}
+
+.share .share-container .share-top {
+    display: flex;
+    align-items: center;
+}
+
+.share .share-container .share-top .share-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-right: 10px;
+    background: #db3434;
+}
+
+.share .share-container .share-top .share-input {
+    width: 80%;
+    border: none;
+}
+
+.share .share-container .share-top .share-input:focus {
+    outline: none;
+}
+
+.share .share-container .share-hr {
+    margin: 20px 0;
+}
+
+.share .share-container .share-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share .share-container .share-bottom .share-options {
+    display: flex;
+}
+
+.share .share-container .share-bottom .share-options .share-option {
+    display: flex;
+    cursor: pointer;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.share .share-container .share-bottom .share-options .share-option .share-icon {
+    font-size: 18px;
+    color: tomato;
+    margin-right: 3px;
+}
+
+.share .share-container .share-bottom .share-options .share-option .share-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.share .share-container .share-bottom .share-btn {
+    border: none;
+    padding: 7px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    background: tomato;
+}

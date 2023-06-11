@@ -1,0 +1,69 @@
+.sidebar {
+    flex: 3;
+    overflow-y: scroll;
+    height: calc(100vh - 50px);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(179, 179, 179);
+}
+
+.sidebar .sidebar-wrapper {
+    padding: 20px;
+}
+
+.sidebar .sidebar-wrapper .sidebar-list {
+    list-style: none;
+}
+
+.sidebar .sidebar-wrapper .sidebar-list .sidebar-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .sidebar-wrapper .sidebar-list .sidebar-list-item .sidebar-icon {
+    margin-right: 15px;
+}
+
+.sidebar .sidebar-wrapper .sidebar-btn {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.sidebar .sidebar-wrapper .sidebar-hr {
+    margin: 20px 0;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.sidebar .sidebar-wrapper .sidebar-friend-list {
+    list-style: none;
+}
+
+.sidebar .sidebar-wrapper .sidebar-friend-list .sidebar-friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar .sidebar-wrapper .sidebar-friend-list .sidebar-friend .sidebar-friend-image {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    background: #000;
+    border-radius: 50%;
+    margin-right: 15px;
+}
