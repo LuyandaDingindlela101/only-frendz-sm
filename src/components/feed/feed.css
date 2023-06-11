@@ -1,7 +1,22 @@
 .feed {
     flex: 5.5;
+    overflow-y: scroll;
+    height: calc(100vh - 50px);
 }
 
 .feed .feed-container {
     padding: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(179, 179, 179);
 }
