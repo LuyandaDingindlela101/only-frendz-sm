@@ -19,7 +19,7 @@ export default function Post({ post }) {
 			<div className="post-container">
 				<div className="post-top">
 					<div className="post-topleft">
-						<img src={ Users.filter(user => user.id == post.user_id)[0].profile_picture } className="post-image" />
+						<img src={ Users.filter(user => user.id === post.user_id)[0].profile_picture } className="post-image" />
 						<span className="post-username">{ Users.filter(user => user.id == post.user_id)[0].username }</span>
 						<span className="post-date">{ post.date }</span>
 					</div>

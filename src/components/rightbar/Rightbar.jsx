@@ -92,7 +92,7 @@ export default function Rightbar({ profile }) {
 	return (
 		<div className="rightbar">
 			<div className="rightbar-container">
-				<Profile_rightbar />
+				{ profile ? <Profile_rightbar /> : <Home_rightbar />}
 			</div>
 		</div>
 	)

@@ -1,0 +1,89 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #f0f2f5;
+    justify-content: center;
+}
+
+.login .login-container {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    padding: 15px;
+}
+
+.login .login-container .login-left, 
+.login .login-container .login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .login-container .login-left .login-logo {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1775ee;
+    margin-bottom: 10px;
+}
+
+.login .login-container .login-left .login-desc {
+    font-size: 24px;
+}
+
+.login .login-container .login-right {
+
+}
+
+.login .login-container .login-right .login-box {
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login .login-container .login-right .login-box .login-input {
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.login .login-container .login-right .login-box .login-input:focus {
+    outline: none;
+}
+
+.login .login-container .login-right .login-box .login-btn {
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 10px;
+    background: #1775ee;
+}
+
+.login .login-container .login-right .login-box .login-forgot {
+    color: #1775ee;
+    text-align: center;
+}
+
+.login .login-container .login-right .login-box .register-btn {
+    width: 50%;
+    height: 50px;
+    border: none;
+    margin: 0 auto;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 10px;
+    background: #42b72a;
+}
