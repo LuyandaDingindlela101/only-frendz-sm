@@ -1,5 +1,7 @@
 .rightbar {
+    top: 50px;
     flex: 3.5;
+    position: static;
     overflow-y: scroll;
     height: calc(100vh - 50px);
 }
@@ -53,7 +55,9 @@
 }   
 
 .rightbar .rightbar-container .rightbar-friend-list .rightbar-friend {
+    width: 100%;
     display: flex;
+    cursor: pointer;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -66,15 +70,13 @@
 .rightbar .rightbar-container .rightbar-friend-list .rightbar-friend .rightbar-profile-container .rightbar-profile-image {
     width: 40px;
     height: 40px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-right: 15px;
-    margin-right: 10px;
-    background: violet;
 }
 
 .rightbar .rightbar-container .rightbar-friend-list .rightbar-friend .rightbar-profile-container .rightbar-profile-online {
+    right: 0;
     top: -2px;
-    right: 10px;
     width: 12px;
     height: 12px;
     border-radius: 50%;

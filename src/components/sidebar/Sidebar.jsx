@@ -1,4 +1,8 @@
 import "./sidebar.css"
+
+import Sidebar_friend from "../sidebar-friend/Sidebar-friend"
+import { Users } from "../../dummy-data"
+
 import { RssFeed, HelpOutline, WorkOutline, Event, School, Bookmark, PlayCircleFilledOutlined, Group, Chat } from "@mui/icons-material"
 
 export default function Sidebar() {
@@ -46,106 +50,7 @@ export default function Sidebar() {
 				<button className="sidebar-btn">Show more</button>
 				<hr className="sidebar-hr" />
 				<ul className="sidebar-friend-list">
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
-					<li className="sidebar-friend">
-						<div className="sidebar-friend-image"></div>
-						<span className="sidebar-friend-name">Jane Doe</span>
-					</li>
+					{ Users.map(user => ( <Sidebar_friend key={ user.id } user={ user } /> )) }
 				</ul>
 			</div>
 		</div>

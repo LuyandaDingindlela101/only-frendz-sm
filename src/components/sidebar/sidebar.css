@@ -1,5 +1,7 @@
 .sidebar {
+    top: 50px;
     flex: 3;
+    position: static;
     overflow-y: scroll;
     height: calc(100vh - 50px);
 }
@@ -51,19 +53,4 @@
 
 .sidebar .sidebar-wrapper .sidebar-friend-list {
     list-style: none;
-}
-
-.sidebar .sidebar-wrapper .sidebar-friend-list .sidebar-friend {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.sidebar .sidebar-wrapper .sidebar-friend-list .sidebar-friend .sidebar-friend-image {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-    background: #000;
-    border-radius: 50%;
-    margin-right: 15px;
 }

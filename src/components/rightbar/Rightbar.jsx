@@ -1,4 +1,8 @@
 import "./rightbar.css"
+
+import { Users } from "../../dummy-data"
+import Online_friend from "../online-friend/online-friend"
+
 import { CardGiftcard } from "@mui/icons-material"
 
 export default function Rightbar() {
@@ -12,90 +16,7 @@ export default function Rightbar() {
 				<div className="rightbar-ad"></div>
 				<h4 className="rightbar-title">Online frendz</h4>
 				<ul className="rightbar-friend-list">
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Hilly</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Villy</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Aj</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Kt</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Hilly</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Villy</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Aj</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Kt</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Hilly</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Villy</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Aj</span>
-					</li>
-					<li className="rightbar-friend">
-						<div className="rightbar-profile-container">
-							<div className="rightbar-profile-image"></div>
-							<span className="rightbar-profile-online"></span>
-						</div>
-						<span className="rightbar-username">Kt</span>
-					</li>
+					{ Users.map(user => ( <Online_friend key={ user.id } user={ user } /> )) }
 				</ul>
 			</div>
 		</div>
