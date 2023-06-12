@@ -1,7 +1,7 @@
 import "./sidebar.css"
 
-import Sidebar_friend from "../sidebar-friend/Sidebar-friend"
 import { Users } from "../../dummy-data"
+import Sidebar_friend from "../sidebar-friend/Sidebar-friend"
 
 import { RssFeed, HelpOutline, WorkOutline, Event, School, Bookmark, PlayCircleFilledOutlined, Group, Chat } from "@mui/icons-material"
 
