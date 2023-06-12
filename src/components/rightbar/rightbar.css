@@ -1,7 +1,7 @@
 .rightbar {
     top: 50px;
     flex: 3.5;
-    position: static;
+    position: sticky;
     overflow-y: scroll;
     height: calc(100vh - 50px);
 }
@@ -37,6 +37,50 @@
     font-size: 15px;
     font-weight: 300;
 }
+
+.rightbar .rightbar-container .rightbar-info-container {
+    margin-bottom: 30px;
+}
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-info {
+    margin-bottom: 10px;
+}   
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-info .rightbar-info-key {
+    color: #555;
+    font-weight: 500;
+    margin-right: 15px;
+}   
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-info .rightbar-info-value {
+    font-weight: 300;
+}   
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-followers {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}   
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-followers .rightbar-follower {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}   
+
+.rightbar .rightbar-container .rightbar-info-container .rightbar-followers .rightbar-follower .rightbar-follower-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}   
 
 .rightbar .rightbar-container .rightbar-ad {
     width: 100%;
